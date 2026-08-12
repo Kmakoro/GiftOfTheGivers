@@ -1,0 +1,60 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="gg-hero py-5">
+    <div class="container">
+        <h1 class="display-6 fw-bold">Contact us</h1>
+        <p class="lead mb-0">Report an emergency, offer resources or ask about our operations.</p>
+    </div>
+</section>
+
+<section class="gg-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <form method="post" class="gg-card p-4">
+                    <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Name" class="form-label"></label>
+                        <input asp-for="Input.Name" class="form-control" />
+                        <span asp-validation-for="Input.Name" class="text-danger small"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Email" class="form-label"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger small"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Subject" class="form-label"></label>
+                        <input asp-for="Input.Subject" class="form-control" />
+                        <span asp-validation-for="Input.Subject" class="text-danger small"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Message" class="form-label"></label>
+                        <textarea asp-for="Input.Message" class="form-control" rows="5"></textarea>
+                        <span asp-validation-for="Input.Message" class="text-danger small"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="gg-card p-4">
+                    <h2 class="h5">Head office</h2>
+                    <p class="small mb-1">Pietermaritzburg, KwaZulu-Natal, South Africa</p>
+                    <p class="small mb-1">Emergency line: 0800 786 911</p>
+                    <p class="small mb-0">Email: info@giftofthegivers.org</p>
+                    <hr />
+                    <p class="small mb-0 text-muted">At prototype stage messages are acknowledged on screen and
+                        not yet routed to a mailbox.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

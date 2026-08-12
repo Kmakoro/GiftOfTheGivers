@@ -1,0 +1,80 @@
+@page
+@model GiftOfTheGivers.Pages.Volunteers.RegisterModel
+@{
+    ViewData["Title"] = "Volunteer";
+}
+
+<section class="gg-hero py-5">
+    <div class="container">
+        <h1 class="display-6 fw-bold">Volunteer with us</h1>
+        <p class="lead mb-0">Tell us what you can do and when you are available. Coordinators match volunteers
+            to relief projects as emergencies unfold.</p>
+    </div>
+</section>
+
+<section class="gg-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <form method="post" class="gg-card p-4">
+                    <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label asp-for="Input.FullName" class="form-label"></label>
+                            <input asp-for="Input.FullName" class="form-control" />
+                            <span asp-validation-for="Input.FullName" class="text-danger small"></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <label asp-for="Input.Email" class="form-label"></label>
+                            <input asp-for="Input.Email" class="form-control" />
+                            <span asp-validation-for="Input.Email" class="text-danger small"></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <label asp-for="Input.PhoneNumber" class="form-label"></label>
+                            <input asp-for="Input.PhoneNumber" class="form-control" />
+                            <span asp-validation-for="Input.PhoneNumber" class="text-danger small"></span>
+                        </div>
+                        <div class="col-sm-6">
+                            <label asp-for="Input.City" class="form-label"></label>
+                            <input asp-for="Input.City" class="form-control" />
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="Input.Skills" class="form-label"></label>
+                            <input asp-for="Input.Skills" class="form-control"
+                                   placeholder="e.g. Nursing, logistics, driving (Code 10), translation" />
+                            <span asp-validation-for="Input.Skills" class="text-danger small"></span>
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="Input.Availability" class="form-label"></label>
+                            <select asp-for="Input.Availability" class="form-select">
+                                <option>Weekdays</option>
+                                <option>Weekends</option>
+                                <option>Evenings only</option>
+                                <option>On call for emergencies</option>
+                                <option>Full time deployment</option>
+                            </select>
+                            <span asp-validation-for="Input.Availability" class="text-danger small"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4">Register interest</button>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="gg-card p-4">
+                    <h2 class="h5">What we most need</h2>
+                    <ul class="small mb-0">
+                        <li class="mb-2">Medical professionals and first aiders</li>
+                        <li class="mb-2">Drivers with heavy vehicle licences</li>
+                        <li class="mb-2">Logistics and warehouse coordinators</li>
+                        <li class="mb-2">Search and rescue trained personnel</li>
+                        <li>Translators and community liaisons</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

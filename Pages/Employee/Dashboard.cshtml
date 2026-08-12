@@ -1,0 +1,106 @@
+@page
+@model GiftOfTheGivers.Pages.Employee.DashboardModel
+@{
+    ViewData["Title"] = "Employee dashboard";
+}
+
+<section class="gg-section">
+    <div class="container">
+        <h1 class="h3">Employee dashboard</h1>
+        <p class="text-muted">Post updates on ongoing relief projects and review volunteer sign-ups.</p>
+
+        <div class="row g-3 my-2">
+            <div class="col-6 col-lg-3"><div class="gg-stat"><div class="value">@Model.Projects.Count</div><div class="small text-muted">Projects</div></div></div>
+            <div class="col-6 col-lg-3"><div class="gg-stat"><div class="value">@Model.Volunteers.Count</div><div class="small text-muted">Volunteers</div></div></div>
+            <div class="col-6 col-lg-3"><div class="gg-stat"><div class="value">@Model.Donations.Count</div><div class="small text-muted">Donations</div></div></div>
+            <div class="col-6 col-lg-3"><div class="gg-stat"><div class="value">R @Model.TotalRaised.ToString("N0")</div><div class="small text-muted">Total raised</div></div></div>
+        </div>
+
+        <div class="row g-4 mt-1">
+            <div class="col-lg-5">
+                <form method="post" asp-page-handler="PostUpdate" class="gg-card p-4">
+                    <h2 class="h5">Post a project update</h2>
+                    <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+                    <div class="mb-3">
+                        <label asp-for="Input.ReliefProjectId" class="form-label"></label>
+                        <select asp-for="Input.ReliefProjectId" class="form-select" asp-items="Model.ProjectOptions"></select>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Title" class="form-label"></label>
+                        <input asp-for="Input.Title" class="form-control" />
+                        <span asp-validation-for="Input.Title" class="text-danger small"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Input.Body" class="form-label"></label>
+                        <textarea asp-for="Input.Body" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="Input.Body" class="text-danger small"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publish update</button>
+                </form>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="gg-card p-4">
+                    <h2 class="h5">Volunteer sign-ups</h2>
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr><th>Name</th><th>Skills</th><th>Availability</th><th>City</th><th>Registered</th></tr>
+                            </thead>
+                            <tbody>
+                            @if (!Model.Volunteers.Any())
+                            {
+                                <tr><td colspan="5" class="text-muted small">No volunteers registered yet.</td></tr>
+                            }
+                            @foreach (var volunteer in Model.Volunteers)
+                            {
+                                <tr>
+                                    <td>@volunteer.FullName<br /><span class="small text-muted">@volunteer.Email</span></td>
+                                    <td class="small">@volunteer.Skills</td>
+                                    <td class="small">@volunteer.Availability</td>
+                                    <td class="small">@volunteer.City</td>
+                                    <td class="small">@volunteer.RegisteredAt.ToString("dd MMM yyyy")</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="gg-card p-4 mt-4">
+                    <h2 class="h5">Recent donations</h2>
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr><th>Reference</th><th>Donor</th><th>Amount</th><th>Type</th><th>Project</th><th></th></tr>
+                            </thead>
+                            <tbody>
+                            @if (!Model.Donations.Any())
+                            {
+                                <tr><td colspan="6" class="text-muted small">No donations captured yet.</td></tr>
+                            }
+                            @foreach (var donation in Model.Donations)
+                            {
+                                <tr>
+                                    <td class="small">@donation.Reference</td>
+                                    <td class="small">@(donation.IsAnonymous ? "Anonymous" : donation.DonorName)</td>
+                                    <td class="small">@donation.Currency @donation.Amount.ToString("N2")</td>
+                                    <td class="small">@donation.Frequency</td>
+                                    <td class="small">@(donation.ReliefProject?.Name ?? "General fund")</td>
+                                    <td class="small">
+                                        <a asp-page="/Donations/Certificate" asp-route-reference="@donation.Reference">Certificate</a>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

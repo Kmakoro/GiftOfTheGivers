@@ -1,0 +1,47 @@
+@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Relief projects";
+}
+
+<section class="gg-hero py-5">
+    <div class="container">
+        <h1 class="display-6 fw-bold">Relief projects</h1>
+        <p class="lead mb-0">Every operation the foundation is currently planning, running or has completed.</p>
+    </div>
+</section>
+
+<section class="gg-section">
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var project in Model.Projects)
+            {
+                <div class="col-md-6">
+                    <div class="gg-card p-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h2 class="h5 mb-1">@project.Name</h2>
+                            <span class="badge badge-status-@project.Status">@project.Status</span>
+                        </div>
+                        <p class="text-muted small">@project.Location • started @project.StartDate.ToString("dd MMM yyyy")</p>
+                        <p class="small">@project.Description</p>
+                        <p class="small mb-2"><strong>Funding goal:</strong> R @project.FundingGoal.ToString("N0")</p>
+                        @if (project.Updates.Any())
+                        {
+                            <details class="small mb-3">
+                                <summary>Field updates (@project.Updates.Count)</summary>
+                                <ul class="mt-2">
+                                    @foreach (var update in project.Updates.OrderByDescending(u => u.PostedAt))
+                                    {
+                                        <li class="mb-1"><strong>@update.Title</strong> — @update.Body
+                                            <span class="text-muted">(@update.PostedAt.ToString("dd MMM yyyy"))</span></li>
+                                    }
+                                </ul>
+                            </details>
+                        }
+                        <a class="btn btn-primary btn-sm" asp-page="/Donations/Index" asp-route-projectId="@project.Id">Donate to this project</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

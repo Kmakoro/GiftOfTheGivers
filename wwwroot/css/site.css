@@ -1,0 +1,138 @@
+:root {
+    --gg-green: #0b6b4f;
+    --gg-green-dark: #084d39;
+    --gg-gold: #e0a800;
+    --gg-ink: #22303c;
+    --gg-muted: #6b7b8c;
+    --gg-surface: #f6f8f7;
+}
+
+body {
+    color: var(--gg-ink);
+    background-color: #ffffff;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.gg-navbar {
+    background-color: var(--gg-green);
+}
+
+.gg-navbar .nav-link,
+.gg-navbar .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.gg-navbar .nav-link:hover,
+.gg-navbar .nav-link:focus {
+    color: #ffffff;
+}
+
+.gg-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--gg-gold);
+    color: var(--gg-green-dark);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.gg-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.gg-brand-text small {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    opacity: 0.85;
+}
+
+.gg-btn-donate {
+    background-color: var(--gg-gold);
+    border-color: var(--gg-gold);
+    color: var(--gg-green-dark);
+    font-weight: 600;
+}
+
+.gg-btn-donate:hover {
+    background-color: #c99500;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: var(--gg-green);
+    border-color: var(--gg-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--gg-green-dark);
+    border-color: var(--gg-green-dark);
+}
+
+.text-gg {
+    color: var(--gg-green);
+}
+
+.gg-hero {
+    background: linear-gradient(135deg, var(--gg-green-dark), var(--gg-green) 60%, #128a66);
+    color: #ffffff;
+    padding: 5rem 0;
+}
+
+.gg-hero p.lead {
+    max-width: 44rem;
+    opacity: 0.92;
+}
+
+.gg-stat {
+    background-color: var(--gg-surface);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.gg-stat .value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gg-green);
+}
+
+.gg-card {
+    border: 1px solid #e3e8e6;
+    border-radius: 0.75rem;
+    height: 100%;
+}
+
+.gg-section {
+    padding: 3.5rem 0;
+}
+
+.gg-section-alt {
+    background-color: var(--gg-surface);
+}
+
+.gg-footer {
+    background-color: var(--gg-green-dark);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.gg-footer a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+}
+
+.gg-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.badge-status-Active { background-color: var(--gg-green); }
+.badge-status-Planned { background-color: var(--gg-muted); }
+.badge-status-OnHold { background-color: #b45309; }
+.badge-status-Completed { background-color: #334155; }
