@@ -1,110 +1,31 @@
 @page
-@model IndexModel
+@model GiftOfTheGivers.Pages.IndexModel
 @{
     ViewData["Title"] = "Home";
+    var fallback = Url.Content("~/images/hero-community.jpg");
 }
-
-<section class="gg-hero">
-    <div class="container">
-        <span class="badge bg-warning text-dark mb-3">Disaster relief, coordinated</span>
-        <h1 class="display-5 fw-bold">Best among people are those who benefit mankind</h1>
-        <p class="lead mt-3">
-            A single hub for the Gift of the Givers Foundation to coordinate relief projects, mobilise
-            volunteers and channel donations to the communities that need them first.
-        </p>
-        <div class="d-flex flex-wrap gap-2 mt-4">
-            <a class="btn gg-btn-donate btn-lg" asp-page="/Donations/Index">Donate now</a>
-            <a class="btn btn-outline-light btn-lg" asp-page="/Volunteers/Register">Become a volunteer</a>
-        </div>
+<section class="hero-section">
+    <img class="hero-image" src="https://images.pexels.com/photos/8061641/pexels-photo-8061641.jpeg?auto=compress&cs=tinysrgb&w=1900" onerror="this.onerror=null;this.src='@fallback';" alt="Volunteers preparing food boxes for community support" />
+    <div class="hero-overlay"></div>
+    <div class="container-fluid site-container hero-inner">
+        <div class="row align-items-center min-vh-75"><div class="col-lg-7 col-xl-6">
+            <div class="hero-kicker"><span></span>Africa's humanitarian response network</div>
+            <h1>Together, we can make a <em>difference.</em></h1>
+            <p class="hero-lead">Connecting donors, volunteers and relief teams so humanitarian support can move quickly where it is needed most.</p>
+            <div class="d-flex flex-wrap gap-3"><a class="btn btn-gold btn-lg" asp-page="/Donate">Donate Now <i class="bi bi-arrow-right ms-2"></i></a><a class="btn btn-hero-outline btn-lg" asp-page="/Volunteer">Volunteer With Us <i class="bi bi-people ms-2"></i></a></div>
+            <div class="hero-proof"><div><i class="bi bi-shield-check"></i><span><strong>Trusted</strong> giving experience</span></div><div><i class="bi bi-megaphone"></i><span><strong>Transparent</strong> project updates</span></div><div><i class="bi bi-people"></i><span><strong>Volunteer</strong> powered response</span></div></div>
+        </div></div>
     </div>
 </section>
-
-<section class="gg-section">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-6 col-lg-3">
-                <div class="gg-stat">
-                    <div class="value">@Model.ActiveProjects</div>
-                    <div class="text-muted small">Active relief projects</div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="gg-stat">
-                    <div class="value">@Model.VolunteerCount</div>
-                    <div class="text-muted small">Registered volunteers</div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="gg-stat">
-                    <div class="value">@Model.DonationCount</div>
-                    <div class="text-muted small">Donations received</div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="gg-stat">
-                    <div class="value">R @Model.TotalRaised.ToString("N0")</div>
-                    <div class="text-muted small">Raised (ZAR equivalent)</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="gg-section gg-section-alt">
-    <div class="container">
-        <h2 class="h3 mb-4">Where we are working right now</h2>
-        <div class="row g-4">
-            @foreach (var project in Model.Projects)
-            {
-                <div class="col-md-4">
-                    <div class="gg-card p-4">
-                        <span class="badge badge-status-@project.Status">@project.Status</span>
-                        <h3 class="h5 mt-3">@project.Name</h3>
-                        <p class="text-muted small mb-2">@project.Location</p>
-                        <p class="small">@project.Description</p>
-                        <a class="btn btn-primary btn-sm" asp-page="/Donations/Index" asp-route-projectId="@project.Id">
-                            Support this project
-                        </a>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-</section>
-
-<section class="gg-section">
-    <div class="container">
-        <div class="row align-items-center g-4">
-            <div class="col-lg-6">
-                <h2 class="h3">Three ways this platform helps</h2>
-                <ul class="mt-3">
-                    <li class="mb-2"><strong>Coordinate relief.</strong> Employees post live updates against each project so field teams and the public share one source of truth.</li>
-                    <li class="mb-2"><strong>Mobilise people.</strong> Volunteers register their skills and availability so coordinators can match them to needs in minutes.</li>
-                    <li class="mb-2"><strong>Fund the response.</strong> One-time and recurring donations in ZAR, USD or EUR, each with an instant tax certificate.</li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <div class="gg-card p-4">
-                    <h3 class="h5">Latest field updates</h3>
-                    @if (!Model.RecentUpdates.Any())
-                    {
-                        <p class="text-muted small mb-0">No updates posted yet.</p>
-                    }
-                    else
-                    {
-                        <ul class="list-unstyled mb-0">
-                            @foreach (var update in Model.RecentUpdates)
-                            {
-                                <li class="border-bottom py-2">
-                                    <div class="fw-semibold">@update.Title</div>
-                                    <div class="small text-muted">@update.ReliefProject?.Name • @update.PostedAt.ToString("dd MMM yyyy")</div>
-                                    <div class="small">@update.Body</div>
-                                </li>
-                            }
-                        </ul>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section class="service-rail"><div class="container-fluid site-container"><div class="service-rail-card row g-0">
+    <div class="col-6 col-lg-3 service-mini"><span><i class="bi bi-box2-heart"></i></span><div><strong>Humanitarian Aid</strong><small>Emergency relief and essential supplies.</small></div></div>
+    <div class="col-6 col-lg-3 service-mini"><span><i class="bi bi-droplet"></i></span><div><strong>Water Provision</strong><small>Support for communities facing shortages.</small></div></div>
+    <div class="col-6 col-lg-3 service-mini"><span><i class="bi bi-lightning-charge"></i></span><div><strong>Disaster Response</strong><small>Fast response when crisis strikes.</small></div></div>
+    <div class="col-6 col-lg-3 service-mini"><span class="gold"><i class="bi bi-people"></i></span><div><strong>Community Support</strong><small>People serving people with dignity.</small></div></div>
+</div></div></section>
+<section class="impact-section section-pad"><div class="container-fluid site-container"><div class="row g-5 align-items-center"><div class="col-lg-5"><span class="section-eyebrow">Our impact</span><h2 class="display-section">Built around action, dignity and trust.</h2><p class="section-copy">Every contribution, volunteer application and relief update supports a clearer connection between people who want to help and communities that need assistance.</p><div class="impact-grid"><div><strong>@Model.ActiveProjectCount</strong><span>Active relief projects</span></div><div><strong>@Model.VolunteerCount</strong><span>Volunteer sign-ups</span></div><div><strong>@Model.DonationCount</strong><span>Donations recorded</span></div><div><strong>3</strong><span>Giving currencies</span></div></div><a class="btn btn-outline-brand" asp-page="/Projects">Explore Relief Projects</a></div><div class="col-lg-7"><div class="video-card"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/75rqYHkAXg?rel=0" title="Gift of the Givers video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-caption"><span class="play-badge"><i class="bi bi-play-fill"></i></span><div><strong>See humanitarian service in action</strong><small>Stories from humanitarian service</small></div></div></div></div></div></div></section>
+<section class="projects-home section-pad bg-soft"><div class="container-fluid site-container"><div class="section-heading-row"><div><span class="section-eyebrow">Relief projects</span><h2 class="display-section mb-0">Where support becomes action.</h2></div><a class="btn btn-outline-brand" asp-page="/Projects">View all projects</a></div><div class="row g-4 mt-2">
+@if(Model.Projects.Count==0){<div class="col-12"><div class="empty-state">No projects are available yet.</div></div>}
+@foreach(var project in Model.Projects){var img=project.Title.Contains("Water",StringComparison.OrdinalIgnoreCase)?"https://images.pexels.com/photos/6646878/pexels-photo-6646878.jpeg?auto=compress&cs=tinysrgb&w=900":project.Title.Contains("Winter",StringComparison.OrdinalIgnoreCase)?"https://images.pexels.com/photos/6591161/pexels-photo-6591161.jpeg?auto=compress&cs=tinysrgb&w=900":project.Title.Contains("Disaster",StringComparison.OrdinalIgnoreCase)?"https://images.pexels.com/photos/6647178/pexels-photo-6647178.jpeg?auto=compress&cs=tinysrgb&w=900":"https://images.pexels.com/photos/6590928/pexels-photo-6590928.jpeg?auto=compress&cs=tinysrgb&w=900";<div class="col-md-6 col-xl-3"><article class="project-card"><img src="@img" alt="Humanitarian volunteers supporting a community" loading="lazy"/><div class="project-card-body"><div class="d-flex justify-content-between gap-2"><span class="status-pill">@project.Status</span><small>@project.Location</small></div><h3>@project.Title</h3><p>@project.Description</p><a asp-page="/Projects">Read latest updates <i class="bi bi-arrow-up-right"></i></a></div></article></div>}
+</div></div></section>
+<section class="cta-section section-pad"><div class="container-fluid site-container"><div class="cta-card"><div><span class="section-eyebrow light">Make a difference</span><h2>Choose how you want to help today.</h2><p>Give once, set up a recurring contribution, or register your skills as a volunteer.</p></div><div class="d-flex flex-wrap gap-3"><a class="btn btn-gold btn-lg" asp-page="/Donate">Make a Donation</a><a class="btn btn-light btn-lg" asp-page="/Volunteer">Become a Volunteer</a></div></div></div></section>

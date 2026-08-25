@@ -1,0 +1,19 @@
+GIFT OF THE GIVERS WEB APPLICATION
+==================================
+
+1. Extract the ZIP fully.
+2. Double-click RESET_DATABASE.cmd once for this updated version.
+3. Double-click RUN_WINDOWS.cmd.
+4. Open http://localhost:5098 if the browser does not open automatically.
+
+EMPLOYEE TEST ACCOUNT
+Email: employee@giftofthegivers.org
+Password: Employee@123
+
+DONOR TEST ACCOUNT
+Email: donor@example.com
+Password: Donor@123!
+
+The Employee account opens the protected Employee Portal.
+Public registration creates Donor accounts.
+Visitors may also make guest or anonymous donations.

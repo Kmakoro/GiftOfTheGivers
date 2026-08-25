@@ -1,0 +1,46 @@
+@page
+@model GiftOfTheGivers.Pages.Account.LoginModel
+@{Layout="_AuthLayout";ViewData["Title"]="Login";}
+<section class="auth-stage">
+    <div class="auth-media">
+        <img src="https://images.pexels.com/photos/8061641/pexels-photo-8061641.jpeg?auto=compress&cs=tinysrgb&w=1600" onerror="this.onerror=null;this.src='/images/hero-community.jpg';" alt="Volunteers carrying food support boxes"/>
+        <div class="auth-media-overlay"></div>
+        <a class="auth-home-link" asp-page="/Index"><i class="bi bi-arrow-left"></i>Back to website</a>
+        <div class="auth-media-copy">
+            <span class="section-eyebrow light">Welcome back</span>
+            <h2>Continue making a difference.</h2>
+            <p>Donors can manage their giving history and certificates. Authorised employees can coordinate projects, volunteer sign-ups and relief updates.</p>
+        </div>
+    </div>
+    <div class="auth-panel">
+        <div class="auth-card">
+            <div class="auth-brand"><img src="~/images/gotg-mark.svg" alt="" width="54" height="54"/><div><strong>Gift of the Givers</strong><small>FOUNDATION</small></div></div>
+            <span class="section-eyebrow">Secure access</span>
+            <h1>Sign in to your account</h1>
+            <p>Enter the email address and password linked to your account.</p>
+            <div class="account-access-grid">
+                <div><i class="bi bi-heart"></i><span><strong>Donor access</strong><small>View donations and certificates</small></span></div>
+                <div><i class="bi bi-person-badge"></i><span><strong>Employee access</strong><small>Authorised staff only</small></span></div>
+            </div>
+            <form method="post" novalidate>
+                <input type="hidden" asp-for="ReturnUrl" />
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger py-2" role="alert"></div>
+                <div class="mb-3">
+                    <label asp-for="Input.Email" class="form-label"></label>
+                    <div class="input-icon"><i class="bi bi-envelope"></i><input asp-for="Input.Email" id="loginEmail" class="form-control form-control-lg" autocomplete="email" placeholder="you@example.com"/></div>
+                    <span asp-validation-for="Input.Email" class="text-danger small"></span>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between"><label asp-for="Input.Password" class="form-label"></label><span class="small text-muted">Secure sign-in</span></div>
+                    <div class="input-icon password-wrap"><i class="bi bi-lock"></i><input asp-for="Input.Password" id="loginPassword" class="form-control form-control-lg" autocomplete="current-password" placeholder="Enter password"/><button type="button" class="password-toggle" aria-label="Show or hide password"><i class="bi bi-eye"></i></button></div>
+                    <span asp-validation-for="Input.Password" class="text-danger small"></span>
+                </div>
+                <div class="form-check my-3"><input asp-for="Input.RememberMe" class="form-check-input"/><label asp-for="Input.RememberMe" class="form-check-label"></label></div>
+                <button type="submit" class="btn btn-brand btn-lg w-100">Sign In <i class="bi bi-arrow-right ms-2"></i></button>
+            </form>
+            <p class="auth-switch">New donor? <a asp-page="/Account/Register">Create an account</a></p>
+            <div class="staff-access-note"><i class="bi bi-shield-lock"></i><span>Employee accounts are created and managed by authorised administrators.</span></div>
+        </div>
+    </div>
+</section>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}

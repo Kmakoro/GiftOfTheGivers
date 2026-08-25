@@ -8,7 +8,6 @@ namespace GiftOfTheGivers.Pages;
 public class ProjectsModel : PageModel
 {
     private readonly ApplicationDbContext _db;
-
     public ProjectsModel(ApplicationDbContext db) => _db = db;
 
     public List<ReliefProject> Projects { get; private set; } = new();
@@ -16,10 +15,10 @@ public class ProjectsModel : PageModel
     public async Task OnGetAsync()
     {
         Projects = await _db.ReliefProjects
-            .AsNoTracking()
             .Include(p => p.Updates)
-            .OrderBy(p => p.Status)
-            .ThenByDescending(p => p.StartDate)
+            .AsNoTracking()
+            .OrderBy(p => p.Status == "Active" ? 0 : p.Status == "Planning" ? 1 : 2)
+            .ThenByDescending(p => p.LastUpdated)
             .ToListAsync();
     }
 }

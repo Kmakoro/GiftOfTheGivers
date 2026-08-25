@@ -1,60 +1,6 @@
 @page
-@model ContactModel
-@{
-    ViewData["Title"] = "Contact";
-}
-
-<section class="gg-hero py-5">
-    <div class="container">
-        <h1 class="display-6 fw-bold">Contact us</h1>
-        <p class="lead mb-0">Report an emergency, offer resources or ask about our operations.</p>
-    </div>
-</section>
-
-<section class="gg-section">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-7">
-                <form method="post" class="gg-card p-4">
-                    <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
-                    <div class="mb-3">
-                        <label asp-for="Input.Name" class="form-label"></label>
-                        <input asp-for="Input.Name" class="form-control" />
-                        <span asp-validation-for="Input.Name" class="text-danger small"></span>
-                    </div>
-                    <div class="mb-3">
-                        <label asp-for="Input.Email" class="form-label"></label>
-                        <input asp-for="Input.Email" class="form-control" />
-                        <span asp-validation-for="Input.Email" class="text-danger small"></span>
-                    </div>
-                    <div class="mb-3">
-                        <label asp-for="Input.Subject" class="form-label"></label>
-                        <input asp-for="Input.Subject" class="form-control" />
-                        <span asp-validation-for="Input.Subject" class="text-danger small"></span>
-                    </div>
-                    <div class="mb-3">
-                        <label asp-for="Input.Message" class="form-label"></label>
-                        <textarea asp-for="Input.Message" class="form-control" rows="5"></textarea>
-                        <span asp-validation-for="Input.Message" class="text-danger small"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send message</button>
-                </form>
-            </div>
-            <div class="col-lg-5">
-                <div class="gg-card p-4">
-                    <h2 class="h5">Head office</h2>
-                    <p class="small mb-1">Pietermaritzburg, KwaZulu-Natal, South Africa</p>
-                    <p class="small mb-1">Emergency line: 0800 786 911</p>
-                    <p class="small mb-0">Email: info@giftofthegivers.org</p>
-                    <hr />
-                    <p class="small mb-0 text-muted">At prototype stage messages are acknowledged on screen and
-                        not yet routed to a mailbox.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+@model GiftOfTheGivers.Pages.ContactModel
+@{ViewData["Title"]="Contact";ViewData["NavStyle"]="light";}
+<section class="page-banner contact-banner"><div class="container-fluid site-container"><span class="section-eyebrow light">Contact</span><h1>Questions, support or a relief enquiry?</h1><p>Send us a message and the team will have your enquiry available for follow-up.</p></div></section>
+<section class="section-pad"><div class="container-fluid site-container"><div class="row g-5"><div class="col-lg-5"><div class="contact-image"><img src="https://images.pexels.com/photos/35043674/pexels-photo-35043674.jpeg?auto=compress&cs=tinysrgb&w=1200" onerror="this.onerror=null;this.src='/images/about-relief.jpg';" alt="Community outreach team"/></div><div class="contact-details"><div><i class="bi bi-telephone"></i><p><strong>National call centre</strong><span>0800 786 911</span></p></div><div><i class="bi bi-envelope"></i><p><strong>Email</strong><span>info@giftofthegivers.org</span></p></div><div><i class="bi bi-geo-alt"></i><p><strong>South Africa</strong><span>Pietermaritzburg and regional offices</span></p></div></div></div><div class="col-lg-7"><div class="form-surface"><span class="section-eyebrow">Send a message</span><h2>How can we help?</h2>@if(!string.IsNullOrWhiteSpace(Model.SuccessMessage)){<div class="notice success"><i class="bi bi-check-circle"></i><span>@Model.SuccessMessage</span></div>}<form method="post" novalidate><div asp-validation-summary="ModelOnly" class="alert alert-danger py-2"></div><div class="row g-3"><div class="col-md-6"><label asp-for="Input.FullName" class="form-label"></label><input asp-for="Input.FullName" class="form-control form-control-lg"/><span asp-validation-for="Input.FullName" class="text-danger small"></span></div><div class="col-md-6"><label asp-for="Input.Email" class="form-label"></label><input asp-for="Input.Email" class="form-control form-control-lg"/><span asp-validation-for="Input.Email" class="text-danger small"></span></div><div class="col-md-6"><label asp-for="Input.Phone" class="form-label"></label><input asp-for="Input.Phone" class="form-control form-control-lg"/><span asp-validation-for="Input.Phone" class="text-danger small"></span></div><div class="col-md-6"><label asp-for="Input.Subject" class="form-label"></label><select asp-for="Input.Subject" class="form-select form-select-lg"><option value="">Choose a subject</option><option>Donation enquiry</option><option>Volunteer enquiry</option><option>Relief project enquiry</option><option>Technical support</option><option>General enquiry</option></select><span asp-validation-for="Input.Subject" class="text-danger small"></span></div><div class="col-12"><label asp-for="Input.Message" class="form-label"></label><textarea asp-for="Input.Message" class="form-control" rows="6" placeholder="Tell us how we can help..."></textarea><span asp-validation-for="Input.Message" class="text-danger small"></span></div></div><button class="btn btn-brand btn-lg mt-4" type="submit">Send Message <i class="bi bi-send ms-2"></i></button></form></div></div></div></div></section>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}

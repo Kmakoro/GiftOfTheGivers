@@ -1,0 +1,76 @@
+@page "{id:int}"
+@model GiftOfTheGivers.Pages.CertificateModel
+@{ViewData["Title"]="Donation Tax Certificate";ViewData["NavStyle"]="light";}
+<section class="section-pad certificate-page">
+    <div class="container-fluid site-container">
+        @if(Model.Donation is null || Model.Donation.TaxCertificate is null)
+        {
+            <div class="alert alert-danger">We could not find the requested donation certificate.</div>
+        }
+        else
+        {
+            @if(!string.IsNullOrWhiteSpace(Model.ConfirmationMessage))
+            {
+                <div class="notice success no-print mb-4"><i class="bi bi-check-circle"></i><span>@Model.ConfirmationMessage</span></div>
+            }
+            <article class="certificate-card certificate-premium mx-auto">
+                <div class="certificate-watermark">GOTG</div>
+                <div class="certificate-header">
+                    <div class="certificate-brand">
+                        <img src="~/images/gotg-mark.svg" width="66" height="66" alt=""/>
+                        <div><strong>Gift of the Givers Foundation</strong><span>Donation Services • South Africa</span></div>
+                    </div>
+                    <div class="certificate-seal"><i class="bi bi-patch-check-fill"></i></div>
+                </div>
+
+                <div class="certificate-title">
+                    <span>Donation acknowledgement</span>
+                    <h1>Donation Tax Certificate</h1>
+                    <p>This document confirms receipt of the donation recorded below and is issued for the donor's records.</p>
+                </div>
+
+                <div class="certificate-number-band">
+                    <span>Certificate Number</span>
+                    <strong>@Model.Donation.TaxCertificate.CertificateNumber</strong>
+                </div>
+
+                <div class="certificate-section-title">Donation details</div>
+                <div class="certificate-grid">
+                    <div><span>Donor</span><strong>@(Model.Donation.IsAnonymous ? "Anonymous Donor" : Model.Donation.DonorName)</strong></div>
+                    <div><span>Email</span><strong>@Model.Donation.DonorEmail</strong></div>
+                    <div><span>Donation date</span><strong>@Model.Donation.DonationDate.ToLocalTime().ToString("dd MMMM yyyy")</strong></div>
+                    <div><span>Amount received</span><strong class="certificate-amount">@Model.Donation.Currency @Model.Donation.Amount.ToString("N2")</strong></div>
+                    <div><span>Donation type</span><strong>@Model.Donation.Frequency</strong></div>
+                    <div><span>Date issued</span><strong>@Model.Donation.TaxCertificate.IssuedAt.ToLocalTime().ToString("dd MMMM yyyy")</strong></div>
+                </div>
+
+                <div class="certificate-thanks">
+                    <i class="bi bi-heart-fill"></i>
+                    <div><strong>Thank you for your contribution.</strong><span>Your support helps strengthen humanitarian relief and community assistance.</span></div>
+                </div>
+
+                <div class="certificate-organisation">
+                    <div><span>Organisation</span><strong>Gift of the Givers Foundation</strong></div>
+                    <div><span>Contact</span><strong>0800 786 911 • info@giftofthegivers.org</strong></div>
+                </div>
+
+                <div class="certificate-note">
+                    <i class="bi bi-info-circle"></i>
+                    <span>Keep this document with your donation records. Tax treatment and deductibility are subject to applicable legislation and the organisation's current tax status.</span>
+                </div>
+
+                <div class="certificate-signoff">
+                    <div><span class="signature-line"></span><strong>Authorised Donation Record</strong><small>Gift of the Givers Foundation</small></div>
+                    <div class="text-end"><strong>Record #@Model.Donation.DonationId</strong><small>Generated from the donation register</small></div>
+                </div>
+            </article>
+            <div class="text-center mt-4 no-print">
+                <button class="btn btn-brand btn-lg" onclick="window.print()"><i class="bi bi-printer me-2"></i>Print / Save PDF</button>
+                @if(User.Identity?.IsAuthenticated == true && User.IsInRole("Donor"))
+                {<a class="btn btn-outline-brand btn-lg" asp-page="/Donor/Dashboard">My Donations</a>}
+                else
+                {<a class="btn btn-outline-brand btn-lg" asp-page="/Donate">Make another donation</a>}
+            </div>
+        }
+    </div>
+</section>

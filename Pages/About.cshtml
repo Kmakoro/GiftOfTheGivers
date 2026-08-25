@@ -1,47 +1,5 @@
 @page
-@model AboutModel
-@{
-    ViewData["Title"] = "About";
-}
-
-<section class="gg-hero py-5">
-    <div class="container">
-        <h1 class="display-6 fw-bold">About the Foundation</h1>
-        <p class="lead mb-0">A beacon of hope in times of crisis, delivering swift and effective aid to
-            communities struck by natural disasters and emergencies in South Africa and beyond.</p>
-    </div>
-</section>
-
-<section class="gg-section">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-7">
-                <h2 class="h4">Our story</h2>
-                <p>The Gift of the Givers Foundation was established in response to the growing need for
-                    organised relief efforts. The foundation operates on the principles of compassion,
-                    efficiency and resilience, with a diverse team of volunteers and experts working to make a
-                    tangible difference in the lives of those affected by adversity.</p>
-                <p>Recent global challenges have made reliable disaster relief solutions more important than
-                    ever. This platform is the foundation's centralised hub for managing relief efforts,
-                    coordinating volunteers and allocating resources during a crisis, so that technology and
-                    humanitarian aid work together to reach more people, faster.</p>
-            </div>
-            <div class="col-lg-5">
-                <div class="gg-card p-4">
-                    <h2 class="h5">What we stand for</h2>
-                    <ul class="mb-0">
-                        <li class="mb-2"><strong>Compassion</strong> — dignity for every person we assist.</li>
-                        <li class="mb-2"><strong>Efficiency</strong> — aid on the ground within hours, not weeks.</li>
-                        <li class="mb-2"><strong>Resilience</strong> — rebuilding communities beyond the emergency.</li>
-                        <li><strong>Accountability</strong> — every donation traceable to a relief project.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="small text-muted mt-4 mb-0">
-            Source: Gift of the Givers Foundation. 2025. [Online]. Available at:
-            <a href="https://giftofthegivers.org" target="_blank" rel="noopener">https://giftofthegivers.org</a>
-            [Accessed 29 September 2025].
-        </p>
-    </div>
-</section>
+@{ViewData["Title"]="About Us";ViewData["NavStyle"]="light";}
+<section class="page-hero-light"><div class="container-fluid site-container"><div class="row align-items-center g-5"><div class="col-lg-6"><span class="section-eyebrow">About us</span><h1>Serving humanity with speed, compassion and dignity.</h1><p>Gift of the Givers is a humanitarian disaster-response organisation of African origin. The platform connects donors, volunteers and employees through clear, accessible tools that support relief work and community response.</p><div class="d-flex gap-3 flex-wrap"><a class="btn btn-brand" asp-page="/Donate">Support the mission</a><a class="btn btn-outline-brand" asp-page="/Volunteer">Join as a volunteer</a></div></div><div class="col-lg-6"><div class="image-frame"><img src="https://images.pexels.com/photos/35043674/pexels-photo-35043674.jpeg?auto=compress&cs=tinysrgb&w=1300" onerror="this.onerror=null;this.src='/images/about-relief.jpg';" alt="Community outreach volunteers distributing supplies"/></div></div></div></div></section>
+<section class="section-pad"><div class="container-fluid site-container"><div class="row g-4"><div class="col-md-4"><div class="value-card"><span><i class="bi bi-heart"></i></span><h2>Humanity</h2><p>People come first. Every workflow is designed to make support easier to give, coordinate and receive.</p></div></div><div class="col-md-4"><div class="value-card"><span><i class="bi bi-shield-check"></i></span><h2>Integrity</h2><p>Role-based access, validation and stored records support responsible use of the platform.</p></div></div><div class="col-md-4"><div class="value-card"><span><i class="bi bi-eye"></i></span><h2>Transparency</h2><p>Donation records, tax certificates and project updates make activity visible and traceable.</p></div></div></div></div></section>
+<section class="section-pad bg-soft"><div class="container-fluid site-container"><div class="row g-5 align-items-center"><div class="col-lg-6 order-lg-2"><span class="section-eyebrow">How the platform helps</span><h2 class="display-section">One platform, three clear journeys.</h2><div class="journey-list"><div><i class="bi bi-person-heart"></i><p><strong>Donors</strong><span>Register, login, donate in ZAR/USD/EUR, choose one-time or recurring, donate anonymously and access certificates.</span></p></div><div><i class="bi bi-people"></i><p><strong>Volunteers</strong><span>Submit personal information, skills and availability through a validated form.</span></p></div><div><i class="bi bi-person-badge"></i><p><strong>Employees</strong><span>Use a protected dashboard to manage relief projects, post updates and view sign-ups and donations.</span></p></div></div></div><div class="col-lg-6 order-lg-1"><img class="rounded-media" src="https://images.pexels.com/photos/6590928/pexels-photo-6590928.jpeg?auto=compress&cs=tinysrgb&w=1300" onerror="this.onerror=null;this.src='/images/about-community.jpg';" alt="Volunteers organising donation boxes" loading="lazy"/></div></div></div></section>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_fixed (1)\\GiftOfTheGivers\\GiftOfTheGivers.csproj": {}
+    "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\GiftOfTheGivers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_fixed (1)\\GiftOfTheGivers\\GiftOfTheGivers.csproj": {
+    "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\GiftOfTheGivers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_fixed (1)\\GiftOfTheGivers\\GiftOfTheGivers.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\GiftOfTheGivers.csproj",
         "projectName": "GiftOfTheGivers",
-        "projectPath": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_fixed (1)\\GiftOfTheGivers\\GiftOfTheGivers.csproj",
+        "projectPath": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\GiftOfTheGivers.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_fixed (1)\\GiftOfTheGivers\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,31 +50,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.0, )"
             },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.0, )"
             },
-            "QuestPDF": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2024.7.3, )"
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

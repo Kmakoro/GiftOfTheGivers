@@ -1,39 +1,43 @@
-using System.ComponentModel.DataAnnotations;
+using GiftOfTheGivers.Data;
+using GiftOfTheGivers.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
 
 namespace GiftOfTheGivers.Pages;
 
 public class ContactModel : PageModel
 {
-    [BindProperty]
-    public ContactInput Input { get; set; } = new();
+    private readonly ApplicationDbContext _db;
+    public ContactModel(ApplicationDbContext db) => _db = db;
 
-    public void OnGet() { }
+    [BindProperty] public ContactInput Input { get; set; } = new();
+    [TempData] public string? SuccessMessage { get; set; }
 
-    public IActionResult OnPost()
+    public async Task<IActionResult> OnPostAsync()
     {
-        if (!ModelState.IsValid)
-            return Page();
+        if (!ModelState.IsValid) return Page();
 
-        TempData["Success"] = $"Thank you {Input.Name}, your message has been received. Our team will respond shortly.";
+        _db.ContactMessages.Add(new ContactMessage
+        {
+            FullName = Input.FullName.Trim(),
+            Email = Input.Email.Trim(),
+            Phone = Input.Phone?.Trim(),
+            Subject = Input.Subject.Trim(),
+            Message = Input.Message.Trim(),
+            CreatedAt = DateTime.UtcNow
+        });
+        await _db.SaveChangesAsync();
+        SuccessMessage = "Thank you. Your message has been received and stored successfully.";
         return RedirectToPage();
     }
 
     public class ContactInput
     {
-        [Required, MaxLength(120)]
-        [Display(Name = "Your name")]
-        public string Name { get; set; } = string.Empty;
-
-        [Required, EmailAddress, MaxLength(200)]
-        [Display(Name = "Email address")]
-        public string Email { get; set; } = string.Empty;
-
-        [Required, MaxLength(150)]
-        public string Subject { get; set; } = string.Empty;
-
-        [Required, MaxLength(2000)]
-        public string Message { get; set; } = string.Empty;
+        [Required, Display(Name="Full name"), StringLength(160)] public string FullName { get; set; } = string.Empty;
+        [Required, EmailAddress, StringLength(200)] public string Email { get; set; } = string.Empty;
+        [Phone, StringLength(40)] public string? Phone { get; set; }
+        [Required, StringLength(120)] public string Subject { get; set; } = string.Empty;
+        [Required, StringLength(2000), MinLength(10)] public string Message { get; set; } = string.Empty;
     }
 }
