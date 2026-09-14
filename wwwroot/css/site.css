@@ -37,6 +37,7 @@
 @media print{.public-header,.trust-strip,.site-footer,.no-print,.employee-sidebar,.employee-topbar{display:none!important}.employee-main{margin:0}.certificate-card{box-shadow:none;border:1px solid #bbb}body{background:#fff}}
 
 
+
 /* polished account access */
 .account-access-grid{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin:1.15rem 0 1.35rem}.account-access-grid>div{display:flex;align-items:center;gap:.65rem;padding:.8rem;border:1px solid var(--line);border-radius:12px;background:#f8f9fb}.account-access-grid i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--green-50);color:var(--green-700);font-size:1rem}.account-access-grid span,.account-access-grid strong,.account-access-grid small{display:block}.account-access-grid strong{font-size:.72rem}.account-access-grid small{font-size:.6rem;color:var(--muted);margin-top:.1rem}.staff-access-note{display:flex;align-items:flex-start;gap:.6rem;padding:.8rem 0 0;color:var(--muted);font-size:.65rem}.staff-access-note i{color:var(--green-700)}
 

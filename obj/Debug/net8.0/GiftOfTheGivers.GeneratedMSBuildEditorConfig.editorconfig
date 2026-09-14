@@ -9,113 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GiftOfTheGivers
 build_property.RootNamespace = GiftOfTheGivers
-build_property.ProjectDir = C:\Users\Student\Downloads\GiftOfTheGivers_WebApplication_NavyBlue\GiftOfTheGivers_WebApplication_Fixed\
+build_property.ProjectDir = C:\Users\Student\Source\Repos\GiftOfTheGivers\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Student\Downloads\GiftOfTheGivers_WebApplication_NavyBlue\GiftOfTheGivers_WebApplication_Fixed
+build_property.MSBuildProjectDirectory = C:\Users\Student\Source\Repos\GiftOfTheGivers
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/About.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Account/Login.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Account/Logout.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Account/Register.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Certificate.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Certificate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Contact.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Donate.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Donate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9uYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Donor/Dashboard.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Donor/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9ub3JcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Employee/AuditLogs.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Employee/AuditLogs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcQXVkaXRMb2dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Employee/Dashboard.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Employee/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Employee/Donations.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Employee/Donations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcRG9uYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Employee/ReliefProjects.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Employee/ReliefProjects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcUmVsaWVmUHJvamVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Employee/Volunteers.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Employee/Volunteers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVcVm9sdW50ZWVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Error.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Index.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/News.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/News.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Projects.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Shared/_AuthLayout.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Shared/_EmployeeLayout.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Shared/_EmployeeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9FbXBsb3llZUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Shared/_Layout.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/Volunteer.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/Volunteer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50ZWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/_ViewImports.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Student/Downloads/GiftOfTheGivers_WebApplication_NavyBlue/GiftOfTheGivers_WebApplication_Fixed/Pages/_ViewStart.cshtml]
+[C:/Users/Student/Source/Repos/GiftOfTheGivers/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

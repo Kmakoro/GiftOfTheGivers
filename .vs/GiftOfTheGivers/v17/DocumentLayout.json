@@ -1,38 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\",
+  "WorkspaceRootPath": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B128B4D6-815A-4F5A-A737-83F9B0440093}|..\\GiftOfTheGivers.Functions\\GiftOfTheGivers.Functions.csproj|c:\\users\\student\\source\\repos\\giftofthegivers.functions\\generatedonationreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\pages\\shared\\_employeelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\pages\\shared\\_employeelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\shared\\_employeelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\downloads\\giftofthegivers_webapplication_navyblue\\giftofthegivers_webapplication_fixed\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|c:\\users\\student\\source\\repos\\giftofthegivers\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8F0A74E-7A3E-4C94-A2E1-7D42BCF11658}|GiftOfTheGivers.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,28 +45,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenerateDonationReceipt.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers.Functions\\GenerateDonationReceipt.cs",
+              "RelativeDocumentMoniker": "..\\GiftOfTheGivers.Functions\\GenerateDonationReceipt.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers.Functions\\GenerateDonationReceipt.cs",
+              "RelativeToolTip": "..\\GiftOfTheGivers.Functions\\GenerateDonationReceipt.cs",
+              "ViewState": "AgIAAKkAAAAAAQAAAKAwwMkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T11:41:16.746Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAQAAAAAAAA==",
+              "ViewState": "AgIAAAAAAADAZWZmZuYswCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-08-24T08:42:14.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -73,9 +89,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "_EmployeeLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_EmployeeLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_EmployeeLayout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_EmployeeLayout.cshtml",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_EmployeeLayout.cshtml",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_EmployeeLayout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_EmployeeLayout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -83,11 +99,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -97,9 +113,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -107,11 +123,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -121,9 +137,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -131,15 +147,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Data\\DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\Student\\Downloads\\GiftOfTheGivers_WebApplication_NavyBlue\\GiftOfTheGivers_WebApplication_Fixed\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Student\\source\\repos\\GiftOfTheGivers\\Data\\DbInitializer.cs",
               "RelativeToolTip": "Data\\DbInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-24T08:16:47.665Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
