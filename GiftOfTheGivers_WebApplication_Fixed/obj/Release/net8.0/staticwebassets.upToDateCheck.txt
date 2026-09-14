@@ -1,0 +1,15 @@
+wwwroot\css\site.css
+wwwroot\images\about-community.jpg
+wwwroot\images\about-relief.jpg
+wwwroot\images\donate-children.jpg
+wwwroot\images\donate-community.jpg
+wwwroot\images\gotg-mark.svg
+wwwroot\images\hero-community.jpg
+wwwroot\images\hero-relief.jpg
+wwwroot\images\project-food.jpg
+wwwroot\images\project-relief.jpg
+wwwroot\images\project-water.jpg
+wwwroot\images\project-winter.jpg
+wwwroot\images\volunteer-team-figma.jpg
+wwwroot\images\volunteer-team.jpg
+wwwroot\js\site.js
